@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Redes</title>
+</head>
+<body>
+
+    <br>
+    <div class="container">
+        <div class="justify-content-center align-items-center row">
+            <span style="font-family: Oswald">Tratamento de erros</span>
+        </div>
+
+        <form onsubmit="sendInformation(event)">
+            <br>
+            <div class="form-group">
+              <input style="font-family: Oswald" type="number" class="form-control" id="info" aria-describedby="input-help" placeholder="Informação a ser enviada...">
+              <small style="font-family: Oswald" id="input-help" class="form-text text-muted">Insira apenas números.</small>
+            </div>
+            
+            <div class="justify-content-center align-items-center row">
+                <button style="font-family: Oswald" type="submit" class="btn btn-success">Enviar</button>
+            </div>
+        </form>
+
+        <div>
+            <span id="information" style="font-family: Oswald"></span>
+            <br>
+            <span id="infoParidade" style="font-family: Oswald"></span>
+            <br>
+            <span id="qtd1" style="font-family: Oswald"></span>
+        </div>
+
+    </div>
+
+
+    <footer class="text-center text-muted"> 
+        <hr/>
+        <p class="small">Redes <i class="fas fa-copyright"></i> URI 2022</p>
+    </footer>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js" charset="utf-8"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="/js/index.js" charset="utf-8"></script>
+
+</body>
+</html>
