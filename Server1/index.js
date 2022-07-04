@@ -50,10 +50,10 @@ app.post('/send', async (req, res) => {
 
             if (count % 2 == 0) {
                 console.log("Paridade par");
-                info2 = info2 + ' + 1'
+                info2 = info2 + ' + 0'
             } else {
                 console.log("Paridade ímpar");
-                info2 = info2 + ' + 0'
+                info2 = info2 + ' + 1'
             }
 
             console.log("Decimal: ", dec);
