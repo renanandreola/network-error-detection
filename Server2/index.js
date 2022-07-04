@@ -4,7 +4,7 @@ const nunjucks = require('nunjucks');
 const bodyParser = require('body-parser');
 const $ = require('jquery');
 
-var reqInfo;
+var reqInfo = 0;
 var dec = 0;
 var count = 0;
 
@@ -38,6 +38,9 @@ app.get('/viewResponse', (req, res) => {
 app.post('/send', (req, res) => {
     try {
         console.log("Chegou request", req.body.info);
+        reqInfo = 0;
+        dec = 0;
+        count = 0;
 
         reqInfo = req.body.info
 
